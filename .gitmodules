@@ -119,3 +119,6 @@
 [submodule "thirdparty/ULib"]
 	path = thirdparty/ULib
 	url = https://github.com/stefanocasazza/ULib
+[submodule "thirdparty/ugeneric"]
+	path = thirdparty/ugeneric
+	url = https://github.com/vslapik/ugeneric
