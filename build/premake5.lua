@@ -14,7 +14,7 @@ function copyfiles(dstDir, srcWildcard)
 end
 
 function gmake_common()
-    buildoptions "-march=native -Wall -Wextra"
+    buildoptions "-march=native -Wall -Wextra -Wno-implicit-fallthrough"
     if (os.findlib("boost_system")) then
         defines { "HAS_BOOST=1" }
         links { "boost_system" }
@@ -131,7 +131,6 @@ solution "benchmark"
             "../thirdparty/ULib/include",
         }
 
-      linkoptions { "../../thirdparty/ULib/src/ulib/.libs/libulib.a" }
 
 		files { 
 			"../src/*.h",
@@ -228,7 +227,6 @@ solution "jsonstat"
 			links "jsonclibs2"
             setTargetObjDir("../bin/jsonstat")
 
-      linkoptions { "../../thirdparty/ULib/src/ulib/.libs/libulib.a" }
 
 			configuration "gmake"
 				buildoptions "-std=c++14"
