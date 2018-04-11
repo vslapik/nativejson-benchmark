@@ -10,4 +10,4 @@ conformance.html: conformance.csv conformance.php
 	php conformance.php $< > $@
 
 clean:
-	rm *.html
+	rm -rf *.html

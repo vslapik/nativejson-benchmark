@@ -142,6 +142,6 @@ public:
 #endif
 };
 
-REGISTER_TEST(ConfiguruTest);
+//REGISTER_TEST(ConfiguruTest);
 
 #endif

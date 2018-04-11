@@ -136,4 +136,4 @@ public:
 #endif
 };
 
-REGISTER_TEST(UjsonTest);
+//REGISTER_TEST(UjsonTest);

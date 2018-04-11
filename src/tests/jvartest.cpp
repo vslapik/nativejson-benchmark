@@ -171,6 +171,6 @@ public:
 #endif
 };
 
-REGISTER_TEST(JvarTest);
+//REGISTER_TEST(JvarTest);
 
 #endif
