@@ -12,7 +12,7 @@
 
 // Define this to profile memory usage in tests
 #ifndef USE_MEMORYSTAT
-#define USE_MEMORYSTAT 0
+#define USE_MEMORYSTAT 1
 #endif
 
 // Define functions to be tested.
