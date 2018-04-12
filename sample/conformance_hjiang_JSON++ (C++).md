@@ -42,11 +42,6 @@
 {"Numbers cannot have leading zeroes": 013}
 ~~~
 
-* `../data/jsonchecker/fail14.json` is invalid but was mistakenly deemed valid.
-~~~js
-{"Numbers cannot be hex": 0x14}
-~~~
-
 * `../data/jsonchecker/fail15.json` is invalid but was mistakenly deemed valid.
 ~~~js
 ["Illegal backslash escape: \x15"]
@@ -85,21 +80,9 @@ break"]
 ~~~
 
 
-Summary: 18 of 34 are correct.
+Summary: 19 of 34 are correct.
 
 ## 2. Parse Double
-
-* `[1e-10000]`
-  * expect: `0 (0x0160)`
-  * actual: `0 (0x0160)`
-
-* `[1e-214748363]`
-  * expect: `0 (0x0160)`
-  * actual: `0 (0x0160)`
-
-* `[1e-214748364]`
-  * expect: `0 (0x0160)`
-  * actual: `0 (0x0160)`
 
 * `[2.22507385850720113605740979670913197593481954635164564e-308]`
   * expect: `2.2250738585072009e-308 (0x016FFFFFFFFFFFFF)`
@@ -130,7 +113,7 @@ Summary: 18 of 34 are correct.
   * actual: `5.7089907708238395e+45 (0x0164970000000000000)`
 
 
-Summary: 56 of 66 are correct.
+Summary: 59 of 66 are correct.
 
 ## 3. Parse String
 

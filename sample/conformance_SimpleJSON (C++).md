@@ -173,12 +173,16 @@ Summary: 28 of 66 are correct.
   * expect: `"Hello\0World"` (length: 11)
   * actual: `"Hello"` (length: 5)
 
+* `["\u20AC"]`
+  * expect: `"‚Ç¨"` (length: 3)
+  * actual: `"‚Ç¨"` (length: 4)
+
 * `["\uD834\uDD1E"]`
   * expect: `"ùÑû"` (length: 4)
-  * actual: `""` (length: 0)
+  * actual: `"Ì†¥"` (length: 4)
 
 
-Summary: 7 of 9 are correct.
+Summary: 6 of 9 are correct.
 
 ## 4. Roundtrip
 
